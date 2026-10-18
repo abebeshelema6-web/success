@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Aster Bekele</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">Aster Bekele</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="projects.html" data-i18n="nav_projects">Projects</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <select class="lang-switcher" aria-label="Select language" id="langSwitch">
+          <option value="en">English</option>
+          <option value="om">Afaan Oromoo</option>
+        </select>
+        <button class="theme-toggle" aria-label="Toggle theme" id="themeToggle">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero container">
+      <div class="section-heading center">
+        <p class="eyebrow" data-i18n="projects">Projects</p>
+        <h1 data-i18n="all_projects">Selected projects</h1>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="filter-bar" id="projectFilters"></div>
+      <div class="project-grid" id="projectGrid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Aster Bekele</h3>
+        <p data-i18n="footer_tag">Information Systems graduate</p>
+      </div>
+      <div>
+        <h4 data-i18n="footer_nav">Navigation</h4>
+        <ul>
+          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="about.html" data-i18n="nav_about">About</a></li>
+          <li><a href="projects.html" data-i18n="nav_projects">Projects</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer_connect">Connect</h4>
+        <ul>
+          <li><a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a></li>
+          <li><a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a></li>
+          <li><a href="mailto:aster.bekele@example.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Aster Bekele</p>
+    </div>
+  </footer>
+</body>
+</html>

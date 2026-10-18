@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0c1d31"/>
+      <stop offset="100%" stop-color="#1f75d2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <circle cx="600" cy="420" r="180" fill="rgba(255,255,255,0.12)"/>
+  <rect x="300" y="260" width="600" height="240" rx="26" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.18)"/>
+  <text x="600" y="500" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="700">Portfolio</text>
+</svg>

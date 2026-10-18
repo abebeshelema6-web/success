@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional portfolio for an Information Systems graduate." />
+  <title>Aster Bekele | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">Aster Bekele</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="projects.html" data-i18n="nav_projects">Projects</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <select class="lang-switcher" aria-label="Select language" id="langSwitch">
+          <option value="en">English</option>
+          <option value="om">Afaan Oromoo</option>
+        </select>
+        <button class="theme-toggle" aria-label="Toggle theme" id="themeToggle">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="availability">Available for internships and entry-level roles</p>
+        <h1>Aster Bekele</h1>
+        <h2 data-i18n="title">Information Systems Graduate</h2>
+        <p data-i18n="intro">I design practical digital solutions, improve user experiences, and build systems that are reliable, efficient, and easy to use.</p>
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-primary" data-i18n="cta_projects">View Projects</a>
+          <a href="contact.html" class="btn btn-secondary" data-i18n="cta_contact">Contact Me</a>
+          <a href="cv.pdf" class="btn btn-tertiary" target="_blank" download data-i18n="cta_cv">Download CV</a>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="profile-frame">
+          <img src="profile.svg" alt="Aster Bekele portrait" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="about">About</p>
+        <h3 data-i18n="about_title">About me</h3>
+      </div>
+      <div class="about-grid">
+        <div class="card">
+          <p data-i18n="bio_text">I am a motivated Information Systems graduate with a strong foundation in web development, database design, and problem solving. I enjoy turning business needs into user-friendly digital products that improve efficiency and decision-making.</p>
+        </div>
+        <div class="card stats-card">
+          <div>
+            <strong>4+</strong>
+            <span data-i18n="stat_projects">Projects</span>
+          </div>
+          <div>
+            <strong>6+</strong>
+            <span data-i18n="stat_skills">Skills</span>
+          </div>
+          <div>
+            <strong>2</strong>
+            <span data-i18n="stat_certificates">Certificates</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="skills">Skills</p>
+        <h3 data-i18n="skills_title">Core skills</h3>
+      </div>
+      <div class="skill-grid" id="skillGrid"></div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="featured">Featured projects</p>
+        <h3 data-i18n="featured_title">Selected work</h3>
+      </div>
+      <div class="project-grid" id="featuredProjects"></div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="timeline">Education & experience</p>
+        <h3 data-i18n="timeline_title">Academic and practical background</h3>
+      </div>
+      <div class="timeline" id="timelineList"></div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="certificates">Certificates</p>
+        <h3 data-i18n="certificates_title">Professional certifications</h3>
+      </div>
+      <div class="cert-grid" id="certList"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Aster Bekele</h3>
+        <p data-i18n="footer_tag">Information Systems graduate</p>
+      </div>
+      <div>
+        <h4 data-i18n="footer_nav">Navigation</h4>
+        <ul>
+          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="about.html" data-i18n="nav_about">About</a></li>
+          <li><a href="projects.html" data-i18n="nav_projects">Projects</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer_connect">Connect</h4>
+        <ul>
+          <li><a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a></li>
+          <li><a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a></li>
+          <li><a href="mailto:aster.bekele@example.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Aster Bekele</p>
+    </div>
+  </footer>
+</body>
+</html>

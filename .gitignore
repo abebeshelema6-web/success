@@ -1,0 +1,10 @@
+# Ignore OS metadata
+.DS_Store
+Thumbs.db
+
+# Ignore local uploads or secrets if not wanted
+uploads/*
+storage/*
+!uploads/.gitkeep
+!storage/cv/.gitkeep
+!storage/logs/.gitkeep
